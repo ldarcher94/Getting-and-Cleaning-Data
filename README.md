@@ -1,9 +1,3 @@
----
-title: "README.md"
-output: html_document
----
-
-***
 ## Getting and Cleaning Data - Course Project
 
 This repository contains the final project for the 'Getting and Cleaning Data' course, part of the Data Science Specialization at Coursera.
@@ -45,15 +39,11 @@ The 'reshape2' package is required for proper function of run_analysis.R.
 
 If necessary, the command to download this package is as follows:
 
-```{r eval = FALSE}
-install.packages('reshape2')
-```
+`install.packages('reshape2')`
 
 ***
 ### How to Use Tidy Data
 
 In order to read the tidy data into R, use the following command:
 
-```{r eval = FALSE}
-x <- read.table('tidy.txt', header = TRUE)
-```
+`x <- read.table('tidy.txt', header = TRUE)`
