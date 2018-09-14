@@ -44,7 +44,7 @@ features <- read.table('UCI_HAR_Dataset/features.txt', header = FALSE)
 
 ## Find all columns containing mean() or std() and extract subset of names
 #required.vars <- features[grep('\\bmean()\\b|\\bstd()\\b', features[ ,2]), 2]
-required.vars <- features[grep('mean()|std()', features[ ,2]), 2]
+required.vars <- features[grep('mean\\(\\)|std\\(\\)', features[ ,2]), 2]
 ### NEED TO CORRECT THIS REGEX!!!
 #NEED TO CORRECT THIS REGEX!!!
 required.vars
